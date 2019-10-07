@@ -29,7 +29,7 @@ class PageListerController extends AbstractController
      */
     protected function getPages()
     {
-        $files = glob($this->getPagesRepoPath() . '*');
+        $files = glob($this->getPagesRepoPath() . '*.html');
 
         return array_map(
             function ($item) {
