@@ -9,6 +9,7 @@ do_install()
 {
     cd ./core && composer install
     yarn install
+    cd ../ && rm -rf .git
 }
 
 # ########
