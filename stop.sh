@@ -1,1 +1,0 @@
-cd core && symfony server:stop

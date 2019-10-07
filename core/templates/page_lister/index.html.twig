@@ -5,7 +5,13 @@
 
 {% block body %}
 
-<div class="example-wrapper">
-    opjre ptoij joj
+<ul data-nav>
+{% for item in pages %}
+    <li><a href="?p={{item}}">{{item|replace({'.html':''})}}</a></li>
+{% endfor %}
+</ul>
+
+<div class="content" data-content>
+    {{ content|raw }}
 </div>
 {% endblock %}
