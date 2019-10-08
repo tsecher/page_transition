@@ -1,0 +1,31 @@
+
+$color: rgb(107, 187, 183);
+
+body, html{
+    padding: 0;
+    margin: 0;
+
+    [data-nav]{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        background: white;
+        width: 100%;
+
+        li{
+            a{
+                padding: .5rem;
+                margin: .5rem;
+                text-decoration: none;
+                display: block;
+                color: black;
+                transition: background-color .3s ease;
+                &:hover{
+                    background: $color;
+                }
+            }
+        }
+    }
+}

@@ -15,7 +15,7 @@ do_install()
 # ########
 # Lancement du serveur symfo et yarn
 ########
-do_launch()
+do_start()
 {
     {   
         #Launch symfony
@@ -43,8 +43,8 @@ do_stop()
 #  MAIN.
 if [ "$1" == "install" ]; then
     do_install
-elif [ "$1" == "launch" ]; then
-    do_launch
+elif [ "$1" == "start" ]; then
+    do_start
 elif [ "$1" == "stop" ]; then
     do_stop
 fi
